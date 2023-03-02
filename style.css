@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mycard{
+    max-width: 550px;
+    width: 100%;
+    height:auto;
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+
+  
+}
+.mycard .mycard-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.mycard-title i{
+    padding-bottom: 15px;
+}
+p{
+    width: auto;
+}

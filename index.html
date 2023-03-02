@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>jquery open cards</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <div class="mycard mt-1">
+                <div class="mycard-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, debitis.</p>
+
+                    <i class="fa-sharp fa-solid fa-arrow-down" id="toggle-icon"></i>
+                </div>
+                <div class="mycard-body">
+                    <p id="toggle-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi qui tenetur aliquam
+                        reiciendis mollitia corrupti, ipsa perspiciatis magnam porro sunt?</p>
+                </div>
+            </div>
+            <div class="mycard mt-1">
+                <div class="mycard-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, debitis.</p>
+
+                    <i class="fa-sharp fa-solid fa-arrow-down" id="toggle-icon1"></i>
+                </div>
+                <div class="mycard-body">
+                    <p id="toggle-p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi qui tenetur aliquam
+                        reiciendis mollitia corrupti, ipsa perspiciatis magnam porro sunt?</p>
+                </div>
+            </div>
+        
+            <div class="mycard mt-1">
+                <div class="mycard-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, debitis.</p>
+
+                    <i class="fa-sharp fa-solid fa-arrow-down" id="toggle-icon2"></i>
+                </div>
+                <div class="mycard-body">
+                    <p id="toggle-p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi qui tenetur aliquam
+                        reiciendis mollitia corrupti, ipsa perspiciatis magnam porro sunt?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(() => {
+            $('.mycard-body #toggle-p').hide();
+
+            $('#toggle-icon').click(() => {
+                $('.mycard-body #toggle-p').slideToggle(() => {
+                    if ($('#toggle-icon').hasClass("fa-sharp fa-solid fa-arrow-down")) {
+                        $('#toggle-icon').removeClass("fa-sharp fa-solid fa-arrow-down");
+                        $('#toggle-icon').addClass("fa-solid fa-arrow-up");
+                    }
+                    else if ($('#toggle-icon').hasClass("fa-solid fa-arrow-up")) {
+                        $('#toggle-icon').removeClass("fa-solid fa-arrow-up");
+                        $('#toggle-icon').addClass("fa-sharp fa-solid fa-arrow-down");
+                    }
+                });
+
+
+
+            })
+
+        });
+
+        $(document).ready(() => {
+            $('.mycard-body #toggle-p1').hide();
+
+            $('#toggle-icon1').click(() => {
+                $('.mycard-body #toggle-p1').slideToggle(() => {
+                    if ($('#toggle-icon1').hasClass("fa-sharp fa-solid fa-arrow-down")) {
+                        $('#toggle-icon1').removeClass("fa-sharp fa-solid fa-arrow-down");
+                        $('#toggle-icon1').addClass("fa-solid fa-arrow-up");
+                    }
+                    else if ($('#toggle-icon1').hasClass("fa-solid fa-arrow-up")) {
+                        $('#toggle-icon1').removeClass("fa-solid fa-arrow-up");
+                        $('#toggle-icon1').addClass("fa-sharp fa-solid fa-arrow-down");
+                    }
+                });
+
+
+
+            })
+
+        })
+
+        $(document).ready(() => {
+            $('.mycard-body #toggle-p2').hide();
+
+            $('#toggle-icon2').click(() => {
+                $('.mycard-body #toggle-p2').slideToggle(() => {
+                    if ($('#toggle-icon2').hasClass("fa-sharp fa-solid fa-arrow-down")) {
+                        $('#toggle-icon2').removeClass("fa-sharp fa-solid fa-arrow-down");
+                        $('#toggle-icon2').addClass("fa-solid fa-arrow-up");
+                    }
+                    else if ($('#toggle-icon2').hasClass("fa-solid fa-arrow-up")) {
+                        $('#toggle-icon2').removeClass("fa-solid fa-arrow-up");
+                        $('#toggle-icon2').addClass("fa-sharp fa-solid fa-arrow-down");
+                    }
+                });
+
+
+
+            })
+
+        })
+
+
+    </script>
+
+
+    <!-- fontawasome -->
+    <script src="https://kit.fontawesome.com/090a716007.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
